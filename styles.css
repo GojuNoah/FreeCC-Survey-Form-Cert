@@ -1,0 +1,62 @@
+body{
+  background-color: pink;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+h1, p {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+h1 {
+  border-bottom: 2px solid #9f2e22;
+  margin-top: .5em;
+}
+p {
+  padding: .5em;
+}
+input[type="submit"] {
+  padding: .5rem;
+  text-align: center;
+  width: 50%;
+  font-size: 1.1em;
+  margin: .5em auto;
+  display: block;
+}
+fieldset {
+  border: 1px solid #9f2e22;
+  margin: .5em;
+}
+.borderless {
+  border: none;
+  text-align: center;
+}
+label {
+  display: block;
+}
+.inline {
+  width: unset;
+  display: inline;
+}
+input, textarea {
+  background-color: #ed91b1;
+  font-size: .75rem;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+#number {
+  min-width: 154px;
+  display: block;
+}
+.cl {
+  display: inline;
+}
+li {
+  list-style: none;
+}
