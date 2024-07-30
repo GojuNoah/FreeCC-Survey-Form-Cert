@@ -1,0 +1,129 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pig or no Pig?</title>
+  </head>
+  <body>
+    <h1 id="title">Pig or no Pig?</h1>
+    <p id="description">This is a survey about pigs. Please fill out, thanks!</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Please enter your name: <input id="name" type="text" required placeholder="Your name"></label>
+        <label id="email-label">Please enter your email: <input id="email" type="email" required placeholder="Your email"></label>
+        <label id="number-label">Please enter your age: <input id="number" type="number" min="18" max="110" placeholder="Your age"></label>
+      </fieldset>
+
+      <fieldset>
+        <label>Can pigs fly?
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Yes</option>
+            <option value="2">No</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you like to eat pork?</legend>
+        <input type="radio" name="pork-preference" value="1" ><label class="inline" for="like">Yes</label>
+        <input type="radio" name="pork-preference" value="2"><label class="inline" for="dislike">No</label>
+      </fieldset>
+
+      <fieldset class="checkbox">
+        <legend>If you like to eat pork, what is your favorite form?</legend>
+        <ul>
+          <li><input type="checkbox" value="1"><label class="cl">Bacon</label></li>
+          <li><input type="checkbox" value="2"><label class="cl">Pulled Pork</label></li>
+          <li><input type="checkbox" value="3"><label class="cl">Ribs</label></li>
+          <li><input type="checkbox" value="4"><label class="cl">Ham</label></li>
+          <li><input type="checkbox" value="5"><label class="cl">ProkChops</label></li>
+          <li><input type="checkbox" value="6"><label class="cl">Pork Tenderloin</label></li>
+          <li><input type="checkbox" value="7"><label class="cl">Not listed</label></li>
+          <li><input type="checkbox" value="8"><label class="cl">Don't like pork</label></li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="borderless">
+        <label>Comments, questions, or concerns? <textarea rows="3" cols="30" placeholder="Why do you have an obsession with pigs...""></textarea></label>
+      </fieldset>
+      
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+  background-color: pink;
+  height: 80vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+h1, p {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+h1 {
+  border-bottom: 2px solid #9f2e22;
+  margin-top: .5em;
+}
+p {
+  padding: .5em;
+}
+input[type="submit"] {
+  padding: .5rem;
+  text-align: center;
+  width: 50%;
+  font-size: 1.1em;
+  margin: .5em auto;
+  display: block;
+}
+fieldset {
+  border: 1px solid #9f2e22;
+  margin: .5em;
+}
+.borderless {
+  border: none;
+  text-align: center;
+}
+label {
+  display: block;
+}
+.inline {
+  width: unset;
+  display: inline;
+}
+input, textarea {
+  background-color: #ed91b1;
+  font-size: .75rem;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+#number {
+  min-width: 154px;
+  display: block;
+}
+.cl {
+  display: inline;
+}
+li {
+  list-style: none;
+}
+
+** end of undefined **
+
